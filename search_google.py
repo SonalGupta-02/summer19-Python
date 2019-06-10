@@ -1,3 +1,5 @@
+#!usr/bin/python3
+
 import webbrowser
 from googlesearch import search
 f_n=open("link",'w')
