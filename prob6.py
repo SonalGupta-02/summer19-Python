@@ -9,4 +9,15 @@ if choice == '1':
 	print(fnew.read())
 	fnew.close()
 elif choice == '2':
+	num=int(input("Enter no of files:"))
+	l=[]
+	for i in range(num):
+		file_l=input("Enter file name")
+		l.append(file_l)
+		print(l)
+	for i in l:
+		f=open(i,'r')
+		print('\n')
+		print(f.read())
+		
 	
