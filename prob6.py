@@ -1,6 +1,6 @@
 #!usr/bin/python3
 
-print("1.To print the data of single file \n 2.To print the data of Multiple files")
+print("1.To print the data of single file \n 2.To print the data of Multiple files \n 3.To create a new Empty file")
 
 choice=int(input("Enter ypur choice:--"))
 if choice == '1':
@@ -19,5 +19,9 @@ elif choice == '2':
 		f=open(i,'r')
 		print('\n')
 		print(f.read())
-		
+	
+	elif choice == '3':
+		fname=input("Enter the file name u wanna create:--")
+		n_file=open(fname,'w')
+		n_file.close()
 	
