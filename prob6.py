@@ -33,3 +33,6 @@ elif choice == '4':
 	n_wr.write(data)
 	n_wr.close()
 	
+else:
+	print("Wrong Choice!!")
+	
