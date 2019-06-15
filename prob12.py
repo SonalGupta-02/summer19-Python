@@ -11,7 +11,7 @@ for i in search(data,stop=3):
 	l_url.append(i)
 	print(i)
 j=0
-for j in range(l_url):
+for j in range(len(l_url)):
 	url=pyqrcode.create(l_url[j])
 	n=open("qr_cd"+data+str(j)+".svg",'wb')
 	url.svg(n,scale=8)
